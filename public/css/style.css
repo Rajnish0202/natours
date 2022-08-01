@@ -599,17 +599,6 @@ body {
   );
 }
 
-/* .section-reviews::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-.section-reviews::-webkit-scrollbar-thumb {
-  background: #000 !important;
-  width: 0.5rem;
-  height: 0.3rem;
-  border-radius: 0.5rem;
-} */
-
 .reviews {
   padding: 5rem 0;
   display: grid;
@@ -618,6 +607,22 @@ body {
   overflow-x: scroll;
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
+}
+
+.reviews::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.3rem;
+}
+
+.reviews::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.reviews::-webkit-scrollbar-thumb {
+  background: #000 !important;
+  width: 0.5rem;
+  height: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .reviews__card {
